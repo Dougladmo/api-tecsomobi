@@ -1,0 +1,27 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model ChargingPoint {
+  id                   Int      @id @default(autoincrement())
+  nome                 String
+  endereco             String
+  tipoRecarga          String
+  status               Boolean
+  horarioFuncionamento String
+  responsavelNome      String
+  responsavelContato   String
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  password String
+}
