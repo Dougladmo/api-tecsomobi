@@ -2,8 +2,6 @@
 
 **Back‑end em Node.js + TypeScript • Prisma • SQLite • Express • Yup**
 
-[🔗 Demo](https://SEU-DOMÍNIO-AQUI/api) • Substitua `SEU-DOMÍNIO-AQUI` pelo domínio onde você hospedar
-
 ---
 
 ## 📋 Visão Geral
