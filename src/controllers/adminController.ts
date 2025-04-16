@@ -3,7 +3,8 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import AdminService from "../services/adminService";
 
-const JWT_SECRET = process.env.JWT_SECRET || "AAABBBCCC"; 
+// Coloquei o secret aqui apenas para desenvolvimento
+const JWT_SECRET = "AAABBBCCC"; 
 
 export const adminInit = async (req: Request, res: Response) => {
   try {
