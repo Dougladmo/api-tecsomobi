@@ -1,7 +1,8 @@
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 
-const JWT_SECRET = process.env.JWT_SECRET || "MINHA_CHAVE_SECRETA";
+// Coloquei o secret aqui apenas para desenvolvimento
+const JWT_SECRET = "AAABBBCCC";
 
 declare module "express-serve-static-core" {
   interface Request {
