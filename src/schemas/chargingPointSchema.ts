@@ -5,7 +5,6 @@ export const chargingPointSchema = yup.object().shape({
   endereco: yup.string().required("Endereço completo é obrigatório"),
   tipoRecarga: yup
     .string()
-    .oneOf(["cartao", "mobile_pay", "qr_code"], "Tipo de recarga inválido")
     .required("Tipo de recarga é obrigatório"),
   status: yup.boolean().required("Status é obrigatório"),
   horarioFuncionamento: yup
