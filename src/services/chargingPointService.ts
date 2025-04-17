@@ -5,7 +5,7 @@ const prisma = new PrismaClient();
 export interface IChargingPoint {
   nome: string;
   endereco: string;
-  tipoRecarga: "cartao" | "mobile_pay" | "qr_code";
+  tipoRecarga: string;
   status: boolean;
   horarioFuncionamento: string;
   responsavelNome: string;
